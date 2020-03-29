@@ -1,0 +1,80 @@
+@font-face {
+    font-family: heading1Font;
+    src: url(./../../../assets/fonts/Righteous-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: body1Font;
+    src: url(./../../../assets/fonts/LibreBaskerville-Regular.ttf);
+    font-weight: bold;
+}
+
+.heading {
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: heading1Font;
+    padding-top: 1vh;
+    background-color: #01c9eb;
+}
+
+.body {
+    height: 60vh;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 7vh;
+    color: black;
+}
+
+.body-content {
+    font-family: body1Font;
+    padding-top: 1vh;
+    font-size: 3vh;
+    margin: 0 0 2vw 8vw;
+    height: 6vh;
+    width: 35vw;
+    border-radius: 25px;
+    background-color: #01c9eb;
+    text-align: center;
+}
+
+.body-content:hover {
+    background-color: #2db0d4;
+    color: white;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.moveLeft {
+    animation-name: moveToLeft;
+    animation-duration: 4s;
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.moveRight {
+    animation-name: moveToRight;
+    animation-duration: 4s;
+}

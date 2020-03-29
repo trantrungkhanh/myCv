@@ -1,0 +1,157 @@
+@font-face {
+    font-family: heading1Font;
+    src: url(./../../../assets/fonts/Righteous-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: body1Font;
+    src: url(./../../../assets/fonts/LibreBaskerville-Regular.ttf);
+    font-weight: bold;
+}
+
+.heading {
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: heading1Font;
+    padding-top: 1vh;
+    background-color: #bfe5ee;
+}
+
+.body {
+    height: 60vh;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 7vh;
+    color: black;
+}
+
+.panel-title2 {
+    text-align: center;
+    font-size: 2vh;
+    color: black;
+}
+
+.heading2 {
+    height: 5.5vh;
+    padding-top: 0;
+    background-color: #bfe5ee;
+}
+
+.center {
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.primary-content {
+    display: none;
+}
+
+.junior-content {
+    display: none;
+}
+
+.high-content {
+    display: none;
+}
+
+.primary:hover+.primary-content {
+    display: block;
+}
+
+.junior:hover+.junior-content {
+    display: block;
+}
+
+.high:hover+.high-content {
+    display: block;
+}
+
+.univer {
+    position: absolute;
+    top: 43vh;
+    left: 13vw;
+}
+
+.CT-title {
+    padding: 2vh 0 0 1vw;
+    float: right;
+    font-size: 2vw;
+    font-family: heading1Font;
+}
+
+.body-content {
+    font-family: body1Font;
+    padding-top: 1vh;
+    font-size: 3vh;
+    margin: 0 0 1vw 9vw;
+    height: 6vh;
+    width: 10vw;
+    border-radius: 25px;
+    background-color: #bfe5ee;
+    text-align: center;
+    animation-name: moveToLeft;
+    animation-duration: 2s;
+}
+
+.body-content-long {
+    font-family: body1Font;
+    margin: 0 0 1vw 2vw;
+    padding-top: 1vh;
+    font-size: 3vh;
+    height: 6vh;
+    width: 25vw;
+    border-radius: 25px;
+    background-color: #bfe5ee;
+    text-align: center;
+    animation-name: moveToRight;
+    animation-duration: 2s;
+}
+
+@keyframes rotateInUpLeft {
+    from {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+        transform: rotate3d(0, 0, 1, 45deg);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-name: rotateInUpLeft;
+    animation-duration: 2s;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

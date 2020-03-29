@@ -1,0 +1,78 @@
+@font-face {
+    font-family: heading1Font;
+    src: url(./../../../assets/fonts/Righteous-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: body1Font;
+    src: url(./../../../assets/fonts/LibreBaskerville-Regular.ttf);
+    font-weight: bold;
+}
+
+.heading {
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: heading1Font;
+    padding-top: 1vh;
+    background-color: #2db0d4;
+}
+
+.body {
+    height: 60vh;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 7vh;
+    color: black;
+}
+
+.body-content {
+    font-family: body1Font;
+    padding-top: 1vh;
+    font-size: 3vh;
+    margin: 0 0 2vw 4.5vw;
+    height: 6vh;
+    width: 40vw;
+    border-radius: 25px;
+    background-color: #f7f4ef;
+    border: solid 2px #2db0d4;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 3vh;
+    font-family: body1Font;
+}
+
+.body-content:hover {
+    background-color: #2db0d4;
+    animation-name: shake;
+    animation-duration: 2s;
+}
+
+@keyframes shake {
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}

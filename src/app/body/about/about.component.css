@@ -1,0 +1,85 @@
+@font-face {
+    font-family: heading1Font;
+    src: url(./../../../assets/fonts/Righteous-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: body1Font;
+    src: url(./../../../assets/fonts/LibreBaskerville-Regular.ttf);
+    font-weight: bold;
+}
+
+.heading {
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: heading1Font;
+    padding-top: 0.5vh;
+    background-color: orangered;
+}
+
+.body {
+    height: 60vh;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 7vh;
+    padding-top: 0;
+    color: black;
+}
+
+.body-content {
+    font-family: body1Font;
+    padding-top: 1.5vh;
+    font-size: 3vh;
+    margin: 2vw 0 2vw;
+    height: 6vh;
+    width: 35vw;
+    border-radius: 25px;
+    background-color: #f7f4ef;
+    border: solid 2px red;
+    ;
+    text-align: center;
+    animation-name: moveToLeft;
+    animation-duration: 3s;
+}
+
+.dob {
+    animation-name: moveToRight;
+    animation-duration: 3s;
+}
+
+.mail {
+    animation-name: moveToRight;
+    animation-duration: 3s;
+}
+
+.body-content:hover {
+    background-color: orangered;
+    color: white;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: heading1Font;
+    src: url(./../../../assets/fonts/Righteous-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: body1Font;
+    src: url(./../../../assets/fonts/LibreBaskerville-Regular.ttf);
+    font-weight: bold;
+}
+
+h2 {
+    padding-top: 0.3vw;
+    font-size: 1.5vw;
+    font-family: body1Font;
+    color: black;
+}
+
+.logo {
+    height: 5vw;
+    width: 5vw;
+}
+
+.center {
+    text-align: center;
+}
+
+.mg {
+    margin-left: 2vw;
+    width: 45vw;
+}
+
+h3 {
+    font-family: heading1Font;
+    font-size: 2vw;
+}
+
+.pos {
+    position: absolute;
+}
+
+.html5 {
+    display: none;
+}
+
+.css {
+    display: none;
+}
+
+.js {
+    display: none;
+}
+
+.angular {
+    display: none;
+}
+
+.bs {
+    display: none;
+}
+
+.img-html5:hover+.html5 {
+    display: block;
+}
+
+.img-css:hover+.css {
+    display: block;
+}
+
+.img-js:hover+.js {
+    display: block;
+}
+
+.img-angular:hover+.angular {
+    display: block;
+}
+
+.img-bs:hover+.bs {
+    display: block;
+}
+
+.progress {
+    margin: 4vh 0 0 7vw;
+    width: 30vw;
+    height: 3vh;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.moveLeft {
+    animation-name: moveToLeft;
+    animation-duration: 4s;
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-6vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.moveRight {
+    animation-name: moveToRight;
+    animation-duration: 4s;
+}

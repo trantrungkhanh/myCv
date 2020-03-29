@@ -1,0 +1,8 @@
+.panel {
+    background-color: white;
+    position: absolute;
+    margin: 10vh 10vw 10vh 10vw;
+    padding: 0;
+    height: 80vh;
+    width: 80vw;
+}
